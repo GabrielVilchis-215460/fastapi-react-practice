@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 #from fastapi.middleware.cors import CORSMiddleware
 #from typing import Union
-from .api import products
+import products
 from .database import Base, engine
 
 Base.metadata.create_all(bind=engine)
